@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: grey;
+}
+
+nav {
+    background-color: rgb(93, 93, 93);
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list a{
+    color: white;
+    text-decoration: none;
+}
