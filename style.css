@@ -1,19 +1,17 @@
-* {
-    margin: 0;
-}
-
 body {
     display: flex;
     background-color: #fef2cd;
     padding: 20px;
-    }
+}
     
-    body>* {
-        margin: 10px;
+body>* {
+    margin: 10px;
 }
 
 header {
     background-color: #f8cfcd;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -29,11 +27,10 @@ main {
 }
 
 section {
+    padding: 10px;
     display: flex;
-    align-items: space-around;
+    align-content: flex-start;
     background-color: #f5f5f5;
-    width: 75%;
-    height: 50vh;
 }
 
 article {
