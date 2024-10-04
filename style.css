@@ -3,20 +3,26 @@
 }
 
 body {
+    display: flex;
     background-color: #fef2cd;
+    padding: 20px;
+    }
+    
+    body>* {
+        margin: 10px;
 }
 
 header {
     background-color: #f8cfcd;
-    height: 10vh;
 }
 
 nav {
     background-color: #d4e9d4;
-    height: 5vh;
 }
 
+
 main {
+    padding: 10px;
     background-color: #dae8fc;
     display: flex;
     align-content: flex-start;
