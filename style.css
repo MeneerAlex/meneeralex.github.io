@@ -9,14 +9,32 @@ body>* {
     text-align: center;
 }
 
+.top {
+    background-image: url(./images/header.png);
+}
+
 header {
-    background-color: #f8cfcd;
-    height: 10vh;
+    height: 20vh;
 }
 
 nav {
-    background-color: #d4e9d4;
     height: 5vh;
+    display: flex;
+    justify-content: center;
+    background: rgba(255,255,255,0.5)
+}
+
+nav a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+
+nav a:hover {
+    color: white;
+    font-size: 30px;
 }
 
 
