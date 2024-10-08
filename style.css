@@ -3,6 +3,10 @@ body {
     display: flex;
     background-color: #fef2cd;
     flex-direction: column;
+    @font-face {
+        font-family: miata;
+        src: url("./fonts/miata.ttf");
+    }
 }
 
 body>* {
@@ -11,29 +15,30 @@ body>* {
 
 .top {
     background-image: url(./images/header.png);
+    background-position: 50% 0;
 }
 
 header {
     height: 20vh;
+    color: white;
 }
 
 nav {
     height: 5vh;
     display: flex;
     justify-content: center;
-    background: rgba(255,255,255,0.5)
+    background: rgba(146, 146, 146, 0.5)
 }
 
 nav a {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     align-self: center;
 }
 
 nav a:hover {
-    color: white;
     font-size: 30px;
 }
 
