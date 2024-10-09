@@ -1,12 +1,15 @@
+@font-face {
+    font-family: miata;
+    src: url(./fonts/miata.ttf);
+}
+
 body {
     margin: 0;
     display: flex;
     background-color: #fef2cd;
     flex-direction: column;
-    @font-face {
-        font-family: miata;
-        src: url("./fonts/miata.ttf");
-    }
+    font-family: system-ui;
+    overflow-x: hidden;
 }
 
 body>* {
@@ -15,12 +18,19 @@ body>* {
 
 .top {
     background-image: url(./images/header.png);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
     background-position: 50% 0;
 }
 
 header {
     height: 20vh;
     color: white;
+}
+
+header h1 {
+    font-family: miata;
+    transform: scale(1.5, 2);
 }
 
 nav {
@@ -36,10 +46,12 @@ nav a {
     text-decoration: none;
     color: white;
     align-self: center;
+    border-radius: 5px;
 }
 
 nav a:hover {
     font-size: 30px;
+    background: rgba(46, 46, 46, 0.3)
 }
 
 
@@ -79,4 +91,9 @@ aside {
 footer {
     background-color: #e1d5e7;
     height: 20vh;
+}
+
+footer h1 {
+    font-family: miata;
+    transform: scale(1, 1.3);
 }
