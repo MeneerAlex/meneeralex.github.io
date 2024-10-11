@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div class="top">
+        <header>
+            <h1>Miata</h1>
+            <p>No matter the question, Miata is always the answer</p>
+        </header>
+        <nav>
+            <a href="../">Home</a>
+            <a href="../aboutme/">About Me</a>
+            <a href="../contact/">Contact</a>
+        </nav>
+    </div>
+    <main>
+        <div class="content">
+            <section>
+                <article>
+                    <h1>Who am I?</h1>
+                    <p>
+                        I am Alex Jonker, I'm <span id="verjaardag"></span> days old
+                        <script>
+                            let birthday = new Date("02/1/2008");
+                            let date = new Date()
+
+                            let Difference_In_Time =
+                                date - birthday.getTime();
+
+                            let Difference_In_Days =
+                                Math.round
+                                    (Difference_In_Time / (1000 * 3600 * 24));
+
+                            document.getElementById("verjaardag").innerHTML = Difference_In_Days;
+
+
+                        </script>
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h1>Why do I like Miatas?</h1>
+                    <p>
+                        The Miatas popularity boils down to its fun driving experience, affordability, and reliability.
+                        Its lightweight design and rear-wheel-drive setup offer pure driving pleasure, while its price
+                        point makes it accessible to many. Even as prices rise, it remains one of the best value sports
+                        cars.
+                        <br>
+                        Beyond that, the Miatas customization options and active community are a big draw. With endless
+                        aftermarket support, owners can easily tweak performance or style. Its simple, timeless design
+                        also appeals to car enthusiasts who appreciate the look and feel of a classic roadster.
+                        <br>
+                        In short, the Miata is popular because it delivers everything a driver could want: fun,
+                        affordability, and endless potential.
+                    </p>
+                </article>
+            </section>
+        </div>
+        <aside>
+            <h1>Fun Facts about the Miata</h1>
+            <ul>
+                <li><strong>Guinness World Record:</strong> The Mazda MX-5 Miata is the best-selling two-seater sports
+                    car of all time, with over one million units sold worldwide.</li>
+                <li><strong>Weight and Design:</strong> The first-generation Miata (NA) weighs just over 2,100 pounds,
+                    which is part of the reason for its nimble handling and quick acceleration.</li>
+                <li><strong>Inspired by British Roadsters:</strong> The Miata was inspired by classic British roadsters
+                    like the Lotus Elan and MGB, but with the added benefit of Japanese reliability.</li>
+                <li><strong>Pop-Up Headlights Love:</strong> The first-generation Miata (NA) is famous for its iconic
+                    pop-up headlights, which have earned it a special place in car culture.</li>
+                <li><strong>Affordable Performance:</strong> The Miata has long been known as the most affordable way to
+                    get behind the wheel of a true rear-wheel-drive sports car.</li>
+            </ul>
+        </aside>
+
+    </main>
+    <footer>
+        <h1>Alex Jonker</h1>
+        <h3>Contact Information:</h3>
+        <p>
+            email: alexj@mail.com
+            <br>
+            phone: 06 12345678
+            <br>
+            <a href="https://github.com/MeneerAlex">github</a>
+        </p>
+    </footer>
+</body>
+
+</html>
