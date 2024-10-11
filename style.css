@@ -29,7 +29,7 @@ body > * {
 
 header {
     height: 20vh;
-    color: white;
+    color: #e0e0e0;
 }
 
 header h1 {
@@ -48,7 +48,7 @@ nav a {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
-    color: white;
+    color: #e0e0e0;
     align-self: center;
     border-radius: 5px;
     transition: 0.3s, transform 0.3s;
@@ -93,4 +93,8 @@ aside {
 
 footer {
     background-color: #1f1f1f;
+}
+
+footer a {
+    color: #e0e0e0;
 }
