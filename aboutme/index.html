@@ -24,19 +24,29 @@
                 <article>
                     <h1>Who am I?</h1>
                     <p>
-                        I am Alex Jonker, I'm <span id="verjaardag"></span> days old
+                        I am Alex Jonker, I'm <span id="verjaardag"></span>
                         <script>
-                            let birthday = new Date("02/1/2008");
-                            let date = new Date()
+                            let verjaardag = new Date("2/1/2008");
 
-                            let Difference_In_Time =
-                                date - birthday.getTime();
+                            let vandaag = new Date();
+                            let jaar = vandaag.getFullYear() - verjaardag.getFullYear();
+                            let maanden = vandaag.getMonth() - verjaardag.getMonth();
+                            let dagen = vandaag.getDate() - verjaardag.getDate();
 
-                            let Difference_In_Days =
-                                Math.round
-                                    (Difference_In_Time / (1000 * 3600 * 24));
+                            if (dagen < 0) {
+                                maanden--;
+                                dagen += new Date(vandaag.getFullYear(), vandaag.getMonth(), 0).getDate();
+                            }
 
-                            document.getElementById("verjaardag").innerHTML = Difference_In_Days;
+                            if (maanden < 0) {
+                                jaar--;
+                                maanden += 12;
+                            }
+
+                            let leeftijd = `${jaar} years, ${maanden} months, and ${dagen} days old.`;
+
+                            document.getElementById("verjaardag").innerHTML = leeftijd;
+                            //source: https://www.javatpoint.com/calculate-age-using-javascript
                         </script>
                     </p>
                 </article>
