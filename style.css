@@ -84,6 +84,12 @@ article {
     padding: 10px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 aside {
     background-color: #333333;
     flex: 1;
