@@ -3,6 +3,9 @@
     src: url(./fonts/miata.ttf);
 }
 
+
+
+
 html {
     scrollbar-color: #333333 #121212;
 }
@@ -108,4 +111,10 @@ footer {
 
 footer a {
     color: #e0e0e0;
+}
+
+@media screen and (min-width: 781px) and (max-width: 840px) {
+    nav a {
+        
+    }
 }
