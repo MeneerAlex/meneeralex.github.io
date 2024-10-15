@@ -113,8 +113,8 @@ footer a {
     color: #e0e0e0;
 }
 
-@media screen and (min-width: 781px) and (max-width: 840px) {
-    nav a {
-        
+@media screen and (max-width: 840px) {
+    main {
+        display: block;
     }
 }
