@@ -2,22 +2,12 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>About Me</title>
 </head>
 
 <body>
-    <div class="top">
-        <header>
-            <h1>Miata</h1>
-            <p>No matter the question, Miata is always the answer</p>
-        </header>
-        <nav>
-            <a href="../">Home</a>
-            <a href="../aboutme/">About Me</a>
-            <a href="../contact/">Contact</a>
-        </nav>
-    </div>
+    <div id="navbar"></div>
     <main>
         <div class="content">
             <section>
@@ -48,41 +38,8 @@
         </aside>
 
     </main>
-    <footer>
-        <h1>Alex Jonker</h1>
-        <h3>Contact Information:</h3>
-        <p>
-            email: alexj@mail.com
-            <br>
-            phone: 06 12345678
-            <br>
-            <a href="https://github.com/MeneerAlex">github</a>
-        </p>
-    </footer>
-
-    <script>
-        let birthday = new Date("2/1/2008");
-
-        let today = new Date();
-        let years = today.getFullYear() - birthday.getFullYear();
-        let months = today.getMonth() - birthday.getMonth();
-        let days = today.getDate() - birthday.getDate();
-
-        if (days < 0) {
-            months--;
-            days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
-        }
-
-        if (months < 0) {
-            years--;
-            months += 12;
-        }
-
-        let leeftijd = `${years} years, ${months} months and ${days} days`;
-
-        document.getElementById("birthday").innerHTML = leeftijd;
-        //source: https://www.javatpoint.com/calculate-age-using-javascript
-    </script>
+    <footer id="footer" ></footer>
+    <script src="/content/script.js"></script>
 </body>
 
 </html>
