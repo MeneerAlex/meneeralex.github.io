@@ -24,7 +24,7 @@ body > * {
     text-align: center;
 }
 
-.top {
+#navbar {
     background-image: url(./images/header.png); /* source: https://www.motorbiscuit.com/wp-content/uploads/2022/04/1994-Mazda-Miata.jpg */
     background-size: cover;
     background-position: 50% 0;
